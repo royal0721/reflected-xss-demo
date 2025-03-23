@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reflected XSS Demo 範例</title>
+</head>
+<body>
+  <h1>Reflected XSS 範例</h1>
+
+  <form method="POST" action="/search">
+    <input type="text" name="q" placeholder="搜尋一些東西..." />
+    <button type="submit">搜尋</button>
+  </form>
+
+  <% if (query) { %>
+    <p>您搜尋: <strong><%- query %></strong></p>
+  <% } %>
+</body>
+</html>
