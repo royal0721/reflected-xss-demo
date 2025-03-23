@@ -1,4 +1,4 @@
-// run `node index.js` in the terminal
+// 請讀者先在下方的 terminal 運行 `node index.js` 
 
 const express = require('express');
 const app = express();
